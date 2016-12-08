@@ -85,36 +85,39 @@
 
 
 <meta name="description" content="##初识jQuery
-###引入&amp;lt;script src=&amp;quot;jquery-1.11.1.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+###引入
+&amp;lt;script src=&amp;quot;jquery-1.11.1.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
 ###入口函数
 
 可以有多个，从上往下依次执行
 仅仅是页面中的文档元素渲染完毕就执行代码，(文档加载完成指DOM树加载完成后可以操作DOM)所以执行更快
 
-123$(document).ready(function()&amp;#123;    //">
+123$(document).ready(function()&amp;#123;    /">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jQuery基础 －jQuery基本概念与用法">
 <meta property="og:url" content="http://dengyekai.com/2016/12/07/jQuery基础-－jQuery基本概念与用法/index.html">
 <meta property="og:site_name" content="微记">
 <meta property="og:description" content="##初识jQuery
-###引入&amp;lt;script src=&amp;quot;jquery-1.11.1.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+###引入
+&amp;lt;script src=&amp;quot;jquery-1.11.1.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
 ###入口函数
 
 可以有多个，从上往下依次执行
 仅仅是页面中的文档元素渲染完毕就执行代码，(文档加载完成指DOM树加载完成后可以操作DOM)所以执行更快
 
-123$(document).ready(function()&amp;#123;    //">
-<meta property="og:updated_time" content="2016-12-07T15:29:20.000Z">
+123$(document).ready(function()&amp;#123;    /">
+<meta property="og:updated_time" content="2016-12-08T01:41:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery基础 －jQuery基本概念与用法">
 <meta name="twitter:description" content="##初识jQuery
-###引入&amp;lt;script src=&amp;quot;jquery-1.11.1.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+###引入
+&amp;lt;script src=&amp;quot;jquery-1.11.1.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
 ###入口函数
 
 可以有多个，从上往下依次执行
 仅仅是页面中的文档元素渲染完毕就执行代码，(文档加载完成指DOM树加载完成后可以操作DOM)所以执行更快
 
-123$(document).ready(function()&amp;#123;    //">
+123$(document).ready(function()&amp;#123;    /">
 
 
 
@@ -353,7 +356,8 @@
 
       
         <p>##初识jQuery</p>
-<p>###引入<br><code>&lt;script src=&quot;jquery-1.11.1.js&quot;&gt;&lt;/script&gt;</code></p>
+<p>###引入</p>
+<p><code>&lt;script src=&quot;jquery-1.11.1.js&quot;&gt;&lt;/script&gt;</code></p>
 <p>###入口函数</p>
 <ol>
 <li>可以有多个，从上往下依次执行</li>
@@ -487,17 +491,26 @@
 </ul>
 </blockquote>
 <ol>
-<li><strong>下一个</strong><br><code>$(“selector1”).next(“selector2”)</code></li>
-<li><strong>父级</strong><br><code>$(“selector1”).parent(“selector2”)</code></li>
+<li><strong>下一个</strong></li>
+</ol>
+<p><code>$(“selector1”).next(“selector2”)</code></p>
+<ol>
+<li><strong>父级</strong></li>
+</ol>
+<p><code>$(“selector1”).parent(“selector2”)</code></p>
+<ol>
 <li><strong>过滤选择器</strong></li>
 </ol>
 <ul>
-<li><p>选择单数<br><code>$(&quot;selector:odd&quot;)</code></p>
-</li>
-<li><p>选择双数<br><code>$(&quot;selector:even&quot;)</code></p>
-</li>
-<li><p>精确选取对象集中的一个</p>
-<figure class="highlight perl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"selector:eq(index)"</span>)</div><div class="line">$(<span class="string">"selector"</span>).e<span class="string">q(index)</span></div><div class="line">//<span class="keyword">index</span>为对象集下标（索引）</div></pre></td></tr></table></figure>
+<li>选择单数</li>
+</ul>
+<p><code>$(&quot;selector:odd&quot;)</code></p>
+<ul>
+<li>选择双数</li>
+</ul>
+<p><code>$(&quot;selector:even&quot;)</code></p>
+<ul>
+<li>精确选取对象集中的一个<figure class="highlight perl"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"selector:eq(index)"</span>)</div><div class="line">$(<span class="string">"selector"</span>).e<span class="string">q(index)</span></div><div class="line">//<span class="keyword">index</span>为对象集下标（索引）</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <p>###<strong>筛选选择器</strong></p>
