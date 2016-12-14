@@ -405,12 +405,12 @@
 <p><strong>DOM对象转jQuery对象</strong></p>
 <p>$(obj)</p>
 <hr>
-<h3 id="jQuery中CSS属性值的获取和设置"><a href="#jQuery中CSS属性值的获取和设置" class="headerlink" title="jQuery中CSS属性值的获取和设置"></a>jQuery中CSS属性值的获取和设置</h3><p><strong>获得属性</strong><br><figure class="highlight gams"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">$</span>(obj).css(<span class="string">"属性"</span>)；</div><div class="line"><span class="comment">//用jquery获得的对象是一个包装集，也就是获得的是一个对象数组，如果有多个标签对象的话，要想获取某个属性的属性值的话，只会获得第一个标签对象的对应的属性值</span></div></pre></td></tr></table></figure></p>
-<h5 id="设置单个属性"><a href="#设置单个属性" class="headerlink" title="设置单个属性"></a>设置单个属性</h5><figure class="highlight gams"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">$</span>(obj).css(<span class="string">"属性名"</span>，<span class="string">"属性值"</span>)；</div><div class="line"><span class="comment">//可设置多个标签</span></div></pre></td></tr></table></figure>
+<h3 id="jQuery中CSS属性值的获取和设置"><a href="#jQuery中CSS属性值的获取和设置" class="headerlink" title="jQuery中CSS属性值的获取和设置"></a>jQuery中CSS属性值的获取和设置</h3><p><strong>获得属性</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$(obj).css(<span class="string">"属性"</span>)；</div><div class="line"><span class="comment">//用jquery获得的对象是一个包装集，也就是获得的是一个对象数组，如果有多个标签对象的话，要想获取某个属性的属性值的话，只会获得第一个标签对象的对应的属性值</span></div></pre></td></tr></table></figure></p>
+<h5 id="设置单个属性"><a href="#设置单个属性" class="headerlink" title="设置单个属性"></a>设置单个属性</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$(obj).css(<span class="string">"属性名"</span>，<span class="string">"属性值"</span>)；</div><div class="line"><span class="comment">//可设置多个标签</span></div></pre></td></tr></table></figure>
 <blockquote>
 <p>   DOM方法<br>对象.style.属性名=</p>
 </blockquote>
-<h5 id="设置多个属性"><a href="#设置多个属性" class="headerlink" title="设置多个属性"></a>设置多个属性</h5><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$(</span>obj).css(&#123;</div><div class="line">    <span class="string">"属性名"</span><span class="symbol">:<span class="string">"属性值"</span></span>,</div><div class="line">    <span class="string">"属性名"</span><span class="symbol">:<span class="string">"属性值"</span></span>,</div><div class="line">    <span class="string">"属性名"</span><span class="symbol">:<span class="string">"属性值"</span></span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h5 id="设置多个属性"><a href="#设置多个属性" class="headerlink" title="设置多个属性"></a>设置多个属性</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$(obj).css(&#123;</div><div class="line">    <span class="string">"属性名"</span>:<span class="string">"属性值"</span>,</div><div class="line">    <span class="string">"属性名"</span>:<span class="string">"属性值"</span>,</div><div class="line">    <span class="string">"属性名"</span>:<span class="string">"属性值"</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 <blockquote>
 <p>   DOM方法<br>添加类名  className</p>
 </blockquote>
@@ -613,7 +613,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -623,7 +623,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
