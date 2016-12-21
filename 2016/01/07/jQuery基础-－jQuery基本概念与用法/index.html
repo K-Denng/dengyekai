@@ -92,7 +92,7 @@
 123$(document).ready(function()&amp;#123;    //页面中的DOM树加载">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jQuery基础 －jQuery基本概念与用法">
-<meta property="og:url" content="http://dengyekai.com/2016/12/07/jQuery基础-－jQuery基本概念与用法/index.html">
+<meta property="og:url" content="http://dengyekai.com/2016/01/07/jQuery基础-－jQuery基本概念与用法/index.html">
 <meta property="og:site_name" content="微记">
 <meta property="og:description" content="初识jQuery引入&amp;lt;script src=&amp;quot;jquery-1.11.1.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
 入口函数
@@ -100,7 +100,7 @@
 仅仅是页面中的文档元素渲染完毕就执行代码，(文档加载完成指DOM树加载完成后可以操作DOM)所以执行更快
 
 123$(document).ready(function()&amp;#123;    //页面中的DOM树加载">
-<meta property="og:updated_time" content="2016-12-08T02:09:34.000Z">
+<meta property="og:updated_time" content="2016-12-21T11:54:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery基础 －jQuery基本概念与用法">
 <meta name="twitter:description" content="初识jQuery引入&amp;lt;script src=&amp;quot;jquery-1.11.1.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
@@ -136,7 +136,7 @@
 
 
 
-  <link rel="canonical" href="http://dengyekai.com/2016/12/07/jQuery基础-－jQuery基本概念与用法/"/>
+  <link rel="canonical" href="http://dengyekai.com/2016/01/07/jQuery基础-－jQuery基本概念与用法/"/>
 
 
 
@@ -273,7 +273,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://dengyekai.com/2016/12/07/jQuery基础-－jQuery基本概念与用法/">
+  <link itemprop="mainEntityOfPage" href="http://dengyekai.com/2016/01/07/jQuery基础-－jQuery基本概念与用法/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="K_Denng">
@@ -310,8 +310,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-07T23:28:08+08:00">
-                2016-12-07
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-01-07T23:28:08+08:00">
+                2016-01-07
               </time>
             
 
@@ -405,12 +405,12 @@
 <p><strong>DOM对象转jQuery对象</strong></p>
 <p>$(obj)</p>
 <hr>
-<h3 id="jQuery中CSS属性值的获取和设置"><a href="#jQuery中CSS属性值的获取和设置" class="headerlink" title="jQuery中CSS属性值的获取和设置"></a>jQuery中CSS属性值的获取和设置</h3><p><strong>获得属性</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$(obj).css(<span class="string">"属性"</span>)；</div><div class="line"><span class="comment">//用jquery获得的对象是一个包装集，也就是获得的是一个对象数组，如果有多个标签对象的话，要想获取某个属性的属性值的话，只会获得第一个标签对象的对应的属性值</span></div></pre></td></tr></table></figure></p>
-<h5 id="设置单个属性"><a href="#设置单个属性" class="headerlink" title="设置单个属性"></a>设置单个属性</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$(obj).css(<span class="string">"属性名"</span>，<span class="string">"属性值"</span>)；</div><div class="line"><span class="comment">//可设置多个标签</span></div></pre></td></tr></table></figure>
+<h3 id="jQuery中CSS属性值的获取和设置"><a href="#jQuery中CSS属性值的获取和设置" class="headerlink" title="jQuery中CSS属性值的获取和设置"></a>jQuery中CSS属性值的获取和设置</h3><p><strong>获得属性</strong><br><figure class="highlight gams"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">$</span>(obj).css(<span class="string">"属性"</span>)；</div><div class="line"><span class="comment">//用jquery获得的对象是一个包装集，也就是获得的是一个对象数组，如果有多个标签对象的话，要想获取某个属性的属性值的话，只会获得第一个标签对象的对应的属性值</span></div></pre></td></tr></table></figure></p>
+<h5 id="设置单个属性"><a href="#设置单个属性" class="headerlink" title="设置单个属性"></a>设置单个属性</h5><figure class="highlight gams"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">$</span>(obj).css(<span class="string">"属性名"</span>，<span class="string">"属性值"</span>)；</div><div class="line"><span class="comment">//可设置多个标签</span></div></pre></td></tr></table></figure>
 <blockquote>
 <p>   DOM方法<br>对象.style.属性名=</p>
 </blockquote>
-<h5 id="设置多个属性"><a href="#设置多个属性" class="headerlink" title="设置多个属性"></a>设置多个属性</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$(obj).css(&#123;</div><div class="line">    <span class="string">"属性名"</span>:<span class="string">"属性值"</span>,</div><div class="line">    <span class="string">"属性名"</span>:<span class="string">"属性值"</span>,</div><div class="line">    <span class="string">"属性名"</span>:<span class="string">"属性值"</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h5 id="设置多个属性"><a href="#设置多个属性" class="headerlink" title="设置多个属性"></a>设置多个属性</h5><figure class="highlight elixir"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$(</span>obj).css(&#123;</div><div class="line">    <span class="string">"属性名"</span><span class="symbol">:<span class="string">"属性值"</span></span>,</div><div class="line">    <span class="string">"属性名"</span><span class="symbol">:<span class="string">"属性值"</span></span>,</div><div class="line">    <span class="string">"属性名"</span><span class="symbol">:<span class="string">"属性值"</span></span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 <blockquote>
 <p>   DOM方法<br>添加类名  className</p>
 </blockquote>
@@ -533,10 +533,6 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/02/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
@@ -613,7 +609,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
